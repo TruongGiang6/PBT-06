@@ -85,7 +85,85 @@
         </button>
     </div>
 
-    
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm position-relative">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ultimate Monitor 4K</h5>
+                        <p class="card-text text-muted">Stunning colors and crisp resolution for creators.</p>
+                        <p class="h5 text-primary mb-3">$499.00 <del class="text-muted fs-6">$599</del></p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal">Xem nhanh</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanical Keyboard</h5>
+                        <p class="card-text text-muted">RGB Backlit with linear switches for gaming.</p>
+                        <p class="h5 text-primary mb-3">$129.00</p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal">Xem nhanh</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm position-relative">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pro Tablet 11"</h5>
+                        <p class="card-text text-muted">Powerful portable device for all tasks.</p>
+                        <p class="h5 text-primary mb-3">$799.00 <del class="text-muted fs-6">$850</del></p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal">Xem nhanh</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=400" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Watch Gen 5</h5>
+                        <p class="card-text text-muted">Track your health and stay connected.</p>
+                        <p class="h5 text-primary mb-3">$199.00</p>
+                        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#productModal">Xem nhanh</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=600" class="img-fluid rounded" alt="Large View">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Ultimate Monitor 4K</h3>
+                            <p class="text-danger fw-bold h4">$499.00</p>
+                            <p>Detailed description: This monitor features IPS panel, 144Hz refresh rate, and 99% sRGB color coverage. Perfect for professional video editing and gaming.</p>
+                            <div class="mb-3">
+                                <label class="form-label">Quantity</label>
+                                <input type="number" class="form-control" value="1" min="1">
+                            </div>
+                            <button class="btn btn-success w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
