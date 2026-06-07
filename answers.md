@@ -31,3 +31,22 @@
 - `.container`: Có chiều rộng cố định (fixed width) thay đổi theo từng breakpoint
 - `.container-fluid`: Luôn chiếm 100% chiều rộng màn hình ở mọi breakpoint
 - `.container-md`: Chiếm 100% chiều rộng cho đến khi đạt breakpoint `md` (768px), từ đó trở đi nó hoạt động giống `.container`
+
+### PHẦN C:
+
+## CÂU C1:
+
+1. Quy trình đổi màu `$primary`:
+- Công cụ: Cần Node.js, npm, và một trình biên dịch SASS
+- Quy trình:
+    + Cài đặt bootstrap qua npm: `npm install bootstrap`
+    + Tạo file SASS tùy chỉnh
+    + Định nghĩa lại biến trước khi import Bootstrap:
+       ```scss
+       $primary: #E63946;
+       @import "node_modules/bootstrap/scss/bootstrap";
+       ```
+    + Biên dịch file `custom.scss` sang `custom.css` để sử dụng
+
+2. Tại sao không nên override trực tiếp?
+- Vì nếu override trực tiếp `.btn-primary`, ta chỉ đổi màu nút bấm. Nếu dùng SASS variables, các thành phần khác dùng màu `$primary` như badges, links, borders, background utilities sẽ tự động cập nhật theo, đảm bảo tính nhất quán của giao diện. Ngoài ra, SASS còn giúp tự động tính toán các biến thể màu (hover, active, focus)
