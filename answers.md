@@ -50,3 +50,14 @@
 
 2. Tại sao không nên override trực tiếp?
 - Vì nếu override trực tiếp `.btn-primary`, ta chỉ đổi màu nút bấm. Nếu dùng SASS variables, các thành phần khác dùng màu `$primary` như badges, links, borders, background utilities sẽ tự động cập nhật theo, đảm bảo tính nhất quán của giao diện. Ngoài ra, SASS còn giúp tự động tính toán các biến thể màu (hover, active, focus)
+
+## CÂU C2:
+
+| Tiêu chí | CSS Thuần (Custom) | Bootstrap Version |
+| :--- | :--- | :--- |
+| Số dòng CSS | Rất nhiều (phải viết media queries, flex/grid rules) | Gần như bằng 0 (chỉ dùng classes có sẵn) |
+| Thời gian phát triển | Chậm (phải test responsive thủ công) | Rất nhanh (layout chuẩn hóa sẵn) |
+| Khả năng tùy biến | Vô hạn, linh hoạt tuyệt đối | Có giới hạn (nếu không dùng SASS) |
+
+- NÊN dùng Bootstrap: Khi cần làm prototype nhanh, các dự án Dashboard/Admin, hoặc dự án cần sự nhất quán và không yêu cầu thiết kế quá đặc thù/sáng tạo
+- KHÔNG NÊN dùng Bootstrap: Khi dự án yêu cầu bộ nhận diện thương hiệu độc bản (unique design), UI cực kỳ phức tạp hoặc yêu cầu tối ưu dung lượng file CSS (Bootstrap chứa nhiều code không dùng tới nếu không lọc)
